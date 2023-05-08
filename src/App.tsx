@@ -1,12 +1,5 @@
 import { useState } from "react";
 
-interface MahasiswaType {
-  aspek_penilaian_1: number;
-  aspek_penilaian_2: number;
-  aspek_penilaian_3: number;
-  aspek_penilaian_4: number;
-}
-
 type DataIndexType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 type AspekPenilaianType =
   | "aspek_penilaian_1"
@@ -15,7 +8,6 @@ type AspekPenilaianType =
   | "aspek_penilaian_4";
 
 const student: JSX.Element[] = [];
-const options: JSX.Element[] = [];
 
 const data = {
   aspek_penilaian_1: {
